@@ -33,3 +33,10 @@ class BST:
       self.output = ''
       self.print_tree(node=self.root)
       return self.output
+
+  def print_tree(self, node, level=0):
+    if node != None:
+      self.print_tree(node.right, level + 1)
+      self.output += ' ' * 4 * level + '-> ' + str(node.data) + '\n'
+      self.print_tree(node.left, level + 1)
+
