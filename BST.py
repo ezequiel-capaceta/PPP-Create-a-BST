@@ -17,3 +17,19 @@ class BST:
   def __init__(self, root=None):
     self.root = root
     self.contents = []
+
+  def __str__(self):
+    if self.root == None:
+      return "The tree is empty"
+    else:
+      self.output = ''
+      self.print_tree(node=self.root)
+      return self.output
+  
+  def __repr__(self):
+    if self.root == None:
+      return "The tree is empty"
+    else:
+      self.output = ''
+      self.print_tree(node=self.root)
+      return self.output
