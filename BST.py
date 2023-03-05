@@ -12,3 +12,8 @@ class BSTNode:
 
 #Part 2: Create a BST class
   #Part 3: Add functionality to your BST class
+
+class BST:
+  def __init__(self, root=None):
+    self.root = root
+    self.contents = []
